@@ -4,8 +4,8 @@
 }
 
 .hero-bg-wrapper {
-  padding-top: 172px;
-  padding-bottom: 24px;
+  padding-top: 380px;
+  padding-bottom: 108px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -13,10 +13,11 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  position: relative;
 
   @include media(desktop) {
-    padding-top: 122px;
-    padding-bottom: 155px;
+    padding-top: 370px;
+    padding-bottom: 56px;
     max-width: 1440px;
     background-image: url(../img/hero/hero-bg-desk.jpg);
   }
@@ -33,30 +34,61 @@
 }
 
 .hero-img {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 311px;
+  position: absolute;
+  top: 171px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 
   @include media(desktop) {
-    margin-bottom: 24px;
+    top: 132px;
+    right: 140px;
+    left: auto;
+    transform: none;
+  }
+}
+
+.hero-btn-wrapper {
+  backdrop-filter: blur(16px);
+  background: rgba(33, 9, 47, 0.8);
+  border: 1px solid #9f8aa9;
+  border-radius: 36px;
+  padding: 60px 23px 31px;
+
+  @include media(desktop) {
+    padding: 102px 23px 31px;
+    max-width: 518px;
+    margin-left: auto;
+  }
+}
+
+.hero-subtitle {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    font-size: 32px;
   }
 }
 
 .hero-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 16px;
   line-height: 1.4;
   text-align: center;
-  color: #212222;
-  margin-bottom: 16px;
+  color: #d0d8ed;
+  margin-bottom: 24px;
 
   @include media(desktop) {
-    font-size: 36px;
-    max-width: 466px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 24px;
+    font-size: 20px;
+    margin-bottom: 32px;
   }
 }
 
@@ -64,11 +96,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #3c69f9;
+  background: linear-gradient(316deg, #f1009d 0%, #2cb9f8 100%);
   border-radius: 50px;
   padding: 12px 20px;
   width: 100%;
-  max-width: 343px;
+  max-width: 295px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +112,7 @@
   &:hover,
   &:focus,
   &:active {
-    background: #325bdf;
+    background: linear-gradient(136deg, #f1009d 0%, #2cb9f8 100%);
 
     .her-btn-top-text {
     }

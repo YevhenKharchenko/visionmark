@@ -1,5 +1,5 @@
 .cookie-banner-section {
-  background: #fff;
+  background: #3e1553;
   padding: 40px 16px;
   width: 100%;
   max-width: 375px;
@@ -26,12 +26,12 @@
 }
 
 .cookie-banner-text {
-  font-family: 'Baloo 2', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
   line-height: 1.4;
   text-align: center;
-  color: #513902;
+  color: #fff;
   margin-bottom: 20px;
 
   @include media(desktop) {
@@ -60,12 +60,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #89c85c;
+  background: #2fef2f;
   padding: 16px 32px;
-  border-radius: 12px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+  border-radius: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 1.4;
   color: #252525;
   width: 100%;
@@ -75,7 +75,7 @@
   &:hover,
   &:focus,
   &:active {
-    background: #71a34d;
+    background: #38cb38;
   }
 
   @include media(desktop) {
@@ -88,13 +88,13 @@
   align-items: center;
   justify-content: center;
   padding: 15px 31px;
-  border: 1px solid #212222;
-  border-radius: 12px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 1.4;
-  color: #212222;
+  color: #fff;
   width: 100%;
   max-width: 343px;
   transition:
@@ -104,8 +104,8 @@
   &:hover,
   &:focus,
   &:active {
-    background: #212222;
-    color: #fff;
+    background: #fff;
+    color: #3e1553;
   }
 
   @include media(desktop) {
