@@ -1,89 +1,75 @@
 <section class="section features-section" id="features">
   <div class="features-bg-wrapper">
     <div class="container features-container">
-      <h2 class="section-title features-title">Features</h2>
-      <p class="features-text">
-        No timers, no pressure — just thoughtful puzzles you can solve at your
-        own pace.
-      </p>
-      <ul class="features-list">
-        <li class="features-list-item">
-          <picture>
-            <source
-              srcset="./img/features/features-img1-desk.png"
-              media="(min-width: 1440px)"
-              width="640"
-              height="400" />
-            <source
-              srcset="./img/features/features-img1-mob.png"
-              width="343"
-              height="400" />
-            <img
-              class="features-img"
-              src="./img/features/features-img1-mob.png"
-              alt="Screenshot of the game"
-              width="343"
-              height="400"
-          /></picture>
-        </li>
-        <li class="features-list-item">
-          <picture>
-            <source
-              srcset="./img/features/features-img2-desk.png"
-              media="(min-width: 1440px)"
-              width="640"
-              height="400" />
-            <source
-              srcset="./img/features/features-img2-mob.png"
-              width="343"
-              height="400" />
-            <img
-              class="features-img"
-              src="./img/features/features-img2-mob.png"
-              alt="Screenshot of the game"
-              width="343"
-              height="400"
-          /></picture>
-        </li>
-        <li class="features-list-item">
-          <picture>
-            <source
-              srcset="./img/features/features-img3-desk.png"
-              media="(min-width: 1440px)"
-              width="640"
-              height="400" />
-            <source
-              srcset="./img/features/features-img3-mob.png"
-              width="343"
-              height="400" />
-            <img
-              class="features-img"
-              src="./img/features/features-img3-mob.png"
-              alt="Screenshot of the game"
-              width="343"
-              height="400"
-          /></picture>
-        </li>
-        <li class="features-list-item">
-          <picture>
-            <source
-              srcset="./img/features/features-img4-desk.png"
-              media="(min-width: 1440px)"
-              width="640"
-              height="400" />
-            <source
-              srcset="./img/features/features-img4-mob.png"
-              width="343"
-              height="400" />
-            <img
-              class="features-img"
-              src="./img/features/features-img4-mob.png"
-              alt="Screenshot of the game"
-              width="343"
-              height="400"
-          /></picture>
-        </li>
-      </ul>
+      <div class="features-content-wrapper">
+        <h2 class="section-title features-title">
+          <span class="section-title-span">World</span> Features
+        </h2>
+        <ul class="features-list">
+          <li class="features-list-item">
+            <svg class="features-icon" width="60" height="60">
+              <use href="./img/sprite.svg#icon-notes"></use>
+            </svg>
+            <p class="features-item-text">
+              Multiple themed regions — desert canyons, crystalline caves,
+              volcanic terraces
+            </p>
+          </li>
+          <li class="features-list-item">
+            <svg class="features-icon" width="60" height="60">
+              <use href="./img/sprite.svg#icon-island"></use>
+            </svg>
+            <p class="features-item-text">
+              The landscape actually changes as you solve puzzles, which is
+              pretty neat
+            </p>
+          </li>
+          <li class="features-list-item">
+            <svg class="features-icon" width="60" height="60">
+              <use href="./img/sprite.svg#icon-sound"></use>
+            </svg>
+            <p class="features-item-text">
+              Rock creatures with puzzle-based interactions (not combat-heavy)
+            </p>
+          </li>
+          <li class="features-list-item">
+            <svg class="features-icon" width="60" height="60">
+              <use href="./img/sprite.svg#icon-lightning"></use>
+            </svg>
+            <p class="features-item-text">
+              The lighting really sets the mood - especially in those cave
+              sections
+            </p>
+          </li>
+          <li class="features-list-item">
+            <svg class="features-icon" width="60" height="60">
+              <use href="./img/sprite.svg#icon-book"></use>
+            </svg>
+            <p class="features-item-text">
+              Collected relics and hidden treasures woven into the world
+              narrative
+            </p>
+          </li>
+        </ul>
+        <picture>
+          <source
+            srcset="./img/features/features-img-desk.png"
+            media="(min-width: 1440px)"
+            width="998"
+            height="531" />
+          <source
+            srcset="./img/features/features-img-mob.png"
+            width="311"
+            height="170" />
+          <img
+            class="features-img"
+            src="./img/features/features-img-mob.png"
+            alt="Screenshot of the game"
+            width="311"
+            height="170"
+            loading="lazy"
+        /></picture>
+      </div>
     </div>
   </div>
 </section>

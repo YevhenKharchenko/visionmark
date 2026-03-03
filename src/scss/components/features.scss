@@ -9,16 +9,11 @@
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/features/features-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto;
 
   @include media(desktop) {
     padding-top: 80px;
     padding-bottom: 80px;
     max-width: 1440px;
-    background-image: url(../img/features/features-bg-desk.png);
   }
 }
 
@@ -27,25 +22,27 @@
   }
 }
 
-.features-title {
+.features-content-wrapper {
+  border: 1px solid #9f8aa9;
+  border-radius: 36px;
+  padding: 39px 15px 0px;
+  background-color: rgba(51, 51, 51, 0.65);
+  background-image: url(../img/features/features-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
+
   @include media(desktop) {
+    padding: 63px 63px 0;
+    background-image: url(../img/features/features-bg-desk.png);
   }
 }
 
-.features-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.4;
-  text-align: center;
-  color: #212222;
+.features-title {
   margin-bottom: 48px;
 
   @include media(desktop) {
-    font-size: 20px;
-    max-width: 488px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 64px;
   }
 }
 
@@ -54,6 +51,7 @@
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  margin-bottom: 48px;
 
   @include media(desktop) {
     flex-direction: row;
@@ -61,19 +59,46 @@
     justify-content: center;
     align-items: start;
     gap: 32px;
+    margin-bottom: 64px;
   }
 }
 
 .features-list-item {
+  padding: 24px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  gap: 16px;
+
+  @include media(desktop) {
+    max-width: 372px;
+  }
+}
+
+.features-icon {
+  min-width: 60px;
 
   @include media(desktop) {
   }
 }
 
+.features-item-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
 .features-img {
+  margin-left: auto;
+  margin-right: auto;
+
   @include media(desktop) {
   }
 }

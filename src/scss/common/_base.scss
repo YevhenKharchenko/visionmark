@@ -53,6 +53,7 @@ html {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
   margin-bottom: 24px;
 
   @include media(desktop) {
@@ -61,6 +62,10 @@ html {
 }
 
 .section-title-span {
+  background: none;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-text-fill-color: #fff;
   color: #fff;
 }
 

@@ -5,7 +5,7 @@
 
 .contact-bg-wrapper {
   padding-top: 64px;
-  padding-bottom: 64px;
+  padding-bottom: 80px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -23,67 +23,55 @@
 }
 
 .contact-content-wrapper {
-  background: linear-gradient(180deg, #87c75a 0%, #469327 100%);
+  border: 1px solid #9f8aa9;
   border-radius: 36px;
-  padding: 48px 16px;
+  padding: 39px 15px;
+  background-image: url(../img/contact/contact-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 
   @include media(desktop) {
-    padding: 64px 0px;
-  }
-}
-
-.contact-img {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 32px;
-
-  @include media(desktop) {
+    padding: 64px;
+    background-image: url(../img/contact/contact-bg-desk.png);
   }
 }
 
 .contact-title {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 42px;
-  line-height: 1.3;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 8px;
+  margin-bottom: 0;
 
   @include media(desktop) {
-    font-size: 72px;
+    text-align: left;
   }
 }
 
 .contact-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
   text-align: center;
   color: #fff;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 
   @include media(desktop) {
-    font-size: 20px;
+    font-size: 18px;
+    text-align: left;
   }
 }
 
 .contact-link {
-  background: #ff6a4a;
-  border: 2px solid #c8c8c8;
+  background: #f1009d;
   border-radius: 12px;
-  padding: 10px 14px;
+  padding: 8px 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 24px;
+  gap: 4px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
   line-height: 1.4;
-  text-align: center;
   color: #fff;
   word-break: break-all;
   max-width: max-content;
@@ -91,13 +79,13 @@
   margin-right: auto;
 
   @include media(desktop) {
-    padding: 10px 41px;
-    font-size: 28px;
+    font-size: 20px;
+    margin-left: 0;
   }
 }
 
 .arrow-icon {
-  min-width: 32px;
+  min-width: 24px;
 
   @include media(desktop) {
   }

@@ -14,10 +14,6 @@
     padding-top: 80px;
     padding-bottom: 80px;
     max-width: 1440px;
-    background-image: url(../img/faq/faq-bg-desk.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: auto;
   }
 }
 
@@ -27,7 +23,22 @@
 }
 
 .faq-content-wrapper {
+  border-radius: 36px;
+  padding: 40px 16px;
+  background-image:
+    url(../img/faq/faq-bg-mob.png),
+    linear-gradient(180deg, #370198 0%, #38156c 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    top center,
+    center;
+  background-size: auto, cover;
+
   @include media(desktop) {
+    padding: 64px;
+    background-image:
+      url(../img/faq/faq-bg-desk.png),
+      linear-gradient(180deg, #370198 0%, #38156c 100%);
   }
 }
 
@@ -55,15 +66,16 @@
 }
 
 .faq-list-item {
-  background: #fff;
+  background: rgba(51, 51, 51, 0.65);
   border: 2px solid #c8c8c8;
-  border-radius: 12px;
-  padding: 18px 14px;
+  border: 1px solid #9f8aa9;
+  border-radius: 20px;
+  padding: 19px 15px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   width: 100%;
-  max-width: 343px;
+  max-width: 311px;
   margin-left: auto;
   margin-right: auto;
   transition: all 0.3s ease-in-out;
@@ -83,11 +95,11 @@
 }
 
 .faq-btn-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.4;
-  color: #444;
+  color: #fff;
   text-align: left;
 
   @include media(desktop) {
@@ -96,8 +108,8 @@
 }
 
 .faq-toggle-symbol {
-  background: #3c69f9;
-  border-radius: 12px;
+  background: linear-gradient(90deg, #00b1ff 0%, #0f5 100%);
+  border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,19 +128,19 @@
 }
 
 .faq-bottom-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
-  color: #585858;
-  max-width: 287px;
+  color: #d0d8ed;
+  max-width: 255px;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   opacity: 0;
 
   @include media(desktop) {
-    font-size: 20px;
+    font-size: 18px;
     max-width: 450px;
   }
 }
