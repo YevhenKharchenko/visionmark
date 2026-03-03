@@ -1,0 +1,153 @@
+.faq-section {
+  @include media(desktop) {
+  }
+}
+
+.faq-bg-wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 1440px;
+    background-image: url(../img/faq/faq-bg-desk.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto;
+  }
+}
+
+.faq-container {
+  @include media(desktop) {
+  }
+}
+
+.faq-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.faq-title {
+  margin-bottom: 48px;
+
+  @include media(desktop) {
+    margin-bottom: 64px;
+  }
+}
+
+.faq-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+
+  @include media(desktop) {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    gap: 16px 32px;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.faq-list-item {
+  background: #fff;
+  border: 2px solid #c8c8c8;
+  border-radius: 12px;
+  padding: 18px 14px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  max-width: 343px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s ease-in-out;
+
+  @include media(desktop) {
+    max-width: 506px;
+  }
+}
+
+.faq-top-text-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-btn-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #444;
+  text-align: left;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.faq-toggle-symbol {
+  background: #3c69f9;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 24px;
+  height: 24px;
+  margin-left: auto;
+  transition: transform 0.3s ease-in-out;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-icon {
+  @include media(desktop) {
+  }
+}
+
+.faq-bottom-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #585858;
+  max-width: 287px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+
+  @include media(desktop) {
+    font-size: 20px;
+    max-width: 450px;
+  }
+}
+
+.is-visible {
+  margin-top: 16px;
+  max-height: 500px;
+  opacity: 1;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-list-item.faq-open .faq-toggle-symbol {
+  transform: rotate(180deg);
+}
+
+.faq-list-item.faq-open {
+}
+
+.faq-list-item.faq-open .faq-btn-text {
+}

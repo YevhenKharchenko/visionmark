@@ -1,0 +1,93 @@
+.gallery-section {
+  background: linear-gradient(180deg, #87c75a 0%, #469327 100%);
+  border-radius: 36px;
+
+  @include media(desktop) {
+  }
+}
+
+.gallery-bg-wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 1440px;
+  }
+}
+
+.gallery-container {
+  @include media(desktop) {
+  }
+}
+
+.gallery-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 72px;
+  }
+}
+
+.gallery-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 48px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    max-width: 488px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 64px;
+  }
+}
+
+.gallery-swiper-container {
+  max-width: 343px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.gallery-swiper-container.show {
+  visibility: visible;
+}
+
+.gallery-swiper-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.gallery-slide {
+  width: 100%;
+  max-width: 343px;
+
+  @include media(desktop) {
+    max-width: 416px;
+  }
+}
+
+.gallery-img {
+  @include media(desktop) {
+  }
+}

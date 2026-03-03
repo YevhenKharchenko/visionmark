@@ -1,0 +1,123 @@
+.hero-section {
+  @include media(desktop) {
+  }
+}
+
+.hero-bg-wrapper {
+  padding-top: 172px;
+  padding-bottom: 24px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include media(desktop) {
+    padding-top: 122px;
+    padding-bottom: 155px;
+    max-width: 1440px;
+    background-image: url(../img/hero/hero-bg-desk.jpg);
+  }
+}
+
+.hero-container {
+  @include media(desktop) {
+  }
+}
+
+.hero-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.hero-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 311px;
+
+  @include media(desktop) {
+    margin-bottom: 24px;
+  }
+}
+
+.hero-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.4;
+  text-align: center;
+  color: #212222;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 36px;
+    max-width: 466px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+  }
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3c69f9;
+  border-radius: 50px;
+  padding: 12px 20px;
+  width: 100%;
+  max-width: 343px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background 0.3s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #325bdf;
+
+    .her-btn-top-text {
+    }
+
+    .her-btn-bottom-text {
+    }
+  }
+
+  @include media(desktop) {
+    max-width: 240px;
+  }
+}
+
+.hero-btn-text-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.her-btn-top-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 4px;
+  transition: color 0.3s ease-in-out;
+
+  @include media(desktop) {
+  }
+}
+
+.her-btn-bottom-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+
+  @include media(desktop) {
+  }
+}
